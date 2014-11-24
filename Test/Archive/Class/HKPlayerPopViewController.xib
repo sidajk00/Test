@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HKPlayerPopViewController">
+            <connections>
+                <outlet property="nextButton" destination="dAx-Tg-12c" id="nFY-KH-M5b"/>
+                <outlet property="orderButton" destination="01M-OW-Oqq" id="6BL-a8-97z"/>
+                <outlet property="playButton" destination="r7Y-Z2-uoc" id="TRV-4z-2c5"/>
+                <outlet property="preButton" destination="Goy-x0-g3J" id="6hL-4Y-JR9"/>
+                <outlet property="speedButton" destination="7jV-V1-v0E" id="zzX-P0-Iof"/>
+                <outlet property="stopButton" destination="0iA-KH-Vqo" id="KAw-T9-tZh"/>
+                <outlet property="view" destination="H81-JN-Vxl" id="xKX-wt-AdN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="H81-JN-Vxl">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="r7Y-Z2-uoc" customClass="HKPushButton">
+                    <rect key="frame" x="155" y="27" width="40" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="play.png"/>
+                    <connections>
+                        <action selector="playVioce:" destination="-1" eventType="touchUpInside" id="cT8-3E-oMz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="01M-OW-Oqq">
+                    <rect key="frame" x="5" y="28" width="40" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="order1.png"/>
+                    <connections>
+                        <action selector="orderButtonClicked:" destination="-1" eventType="touchUpInside" id="quq-hj-i5R"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Goy-x0-g3J">
+                    <rect key="frame" x="105" y="27" width="40" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="prev.png"/>
+                    <connections>
+                        <action selector="goPre:" destination="-1" eventType="touchUpInside" id="ygt-yW-xOK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="7jV-V1-v0E">
+                    <rect key="frame" x="55" y="28" width="40" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="speed3.png"/>
+                    <connections>
+                        <action selector="speedButtonClicked:" destination="-1" eventType="touchUpInside" id="XCH-do-3h7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="dAx-Tg-12c">
+                    <rect key="frame" x="205" y="27" width="40" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="next.png"/>
+                    <connections>
+                        <action selector="goNext:" destination="-1" eventType="touchUpInside" id="nk0-u9-vrc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="0iA-KH-Vqo">
+                    <rect key="frame" x="255" y="28" width="40" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="stop.png"/>
+                    <connections>
+                        <action selector="stopClicked:" destination="-1" eventType="touchUpInside" id="6Cm-hv-Cht"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="next.png" width="30" height="30"/>
+        <image name="order1.png" width="30" height="30"/>
+        <image name="play.png" width="30" height="30"/>
+        <image name="prev.png" width="30" height="30"/>
+        <image name="speed3.png" width="30" height="30"/>
+        <image name="stop.png" width="30" height="30"/>
+    </resources>
+</document>
